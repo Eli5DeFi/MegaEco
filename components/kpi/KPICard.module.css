@@ -1,0 +1,156 @@
+.card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 32px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease-out-expo),
+              transform 0.6s var(--ease-out-expo);
+  transition-delay: var(--card-delay);
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  padding: 4px 10px;
+  background: rgba(232, 228, 255, 0.08);
+  border: 1px solid rgba(232, 228, 255, 0.15);
+  border-radius: 6px;
+}
+
+.title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.headline {
+  margin-bottom: 16px;
+}
+
+.headlineValue {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.overallProgress {
+  margin-bottom: 28px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progressLabel {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.progressValue {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.overallLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.metric {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+}
+
+.metricHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.metricLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.metricValue {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.metricUnit {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-left: 2px;
+}
+
+.metricDesc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 24px;
+  }
+
+  .headlineValue {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}

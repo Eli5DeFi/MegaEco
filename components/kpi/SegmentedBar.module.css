@@ -1,0 +1,28 @@
+.bar {
+  display: flex;
+  gap: 3px;
+}
+
+.segment {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.segment.filled {
+  background: var(--accent-primary);
+}
+
+.segment.filled.animated {
+  animation: segmentFill 0.4s var(--ease-out-expo) forwards;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+@keyframes segmentFill {
+  to {
+    background: var(--accent-primary);
+    box-shadow: 0 0 8px rgba(232, 228, 255, 0.3);
+  }
+}

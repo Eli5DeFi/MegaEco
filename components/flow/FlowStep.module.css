@@ -1,0 +1,172 @@
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.5s var(--ease-out-expo),
+              transform 0.5s var(--ease-out-expo);
+  transition-delay: var(--step-delay);
+}
+
+.step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.connector {
+  flex-shrink: 0;
+  padding-top: 20px;
+  width: 24px;
+}
+
+.connectorSvg {
+  display: block;
+}
+
+.drawLine {
+  animation: dashDraw 0.6s ease forwards;
+  stroke-dashoffset: 24;
+}
+
+@keyframes dashDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.card {
+  flex: 1;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 20px;
+  transition: background var(--duration-fast) ease,
+              border-color var(--duration-fast) ease,
+              box-shadow var(--duration-fast) ease;
+}
+
+.card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-active);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.stepNumber {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.action {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.protocol {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: background var(--duration-fast) ease,
+              transform var(--duration-fast) ease;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.protocol:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(2px);
+}
+
+.protocolName {
+  letter-spacing: 0.01em;
+}
+
+.externalIcon {
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.subSteps {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 12px;
+  border-left: 2px solid var(--step-color);
+}
+
+.subStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background var(--duration-fast) ease,
+              border-color var(--duration-fast) ease;
+}
+
+.subStep:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--border-active);
+}
+
+.subArrow {
+  color: var(--step-color);
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.subName {
+  display: block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.subDesc {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+  }
+
+  .action {
+    font-size: 0.9rem;
+  }
+
+  .subSteps {
+    padding-left: 8px;
+  }
+}
