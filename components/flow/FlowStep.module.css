@@ -136,11 +136,9 @@
   border-color: var(--border-active);
 }
 
-.subArrow {
-  color: var(--step-color);
-  font-size: 1rem;
-  flex-shrink: 0;
-  margin-top: 1px;
+.subContent {
+  flex: 1;
+  min-width: 0;
 }
 
 .subName {

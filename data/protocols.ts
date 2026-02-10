@@ -39,7 +39,7 @@ export const protocols: Protocol[] = [
     tags: ["dex", "trading", "launches"],
     status: "live",
     isMegaMafia: true,
-    icon: "/icons/kumbaya.svg",
+    icon: "https://raw.githubusercontent.com/Kumbaya-xyz/brand-assets/main/with-logo/logo-only/kumbaya-icon-red.svg",
     links: {
       website: "https://kumbaya.xyz",
       twitter: "https://twitter.com/kumbaya_xyz",
@@ -53,7 +53,7 @@ export const protocols: Protocol[] = [
     tags: ["dex", "dlmm", "trading"],
     status: "live",
     isMegaMafia: true,
-    icon: "/icons/sectorone.svg",
+    icon: "https://sectorone.xyz/favicon.ico",
     links: {
       website: "https://sectorone.xyz",
       twitter: "https://twitter.com/SectorOneDEX",
@@ -67,7 +67,7 @@ export const protocols: Protocol[] = [
     tags: ["amm", "trading", "spot"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/warpx.svg",
+    icon: "https://warpx.xyz/favicon.ico",
     links: {
       website: "https://warpx.xyz",
     },
@@ -80,7 +80,7 @@ export const protocols: Protocol[] = [
     tags: ["dex", "trading", "fast"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/prism.svg",
+    icon: "https://prism.exchange/favicon.ico",
     links: {
       website: "https://prism.exchange",
     },
@@ -93,7 +93,7 @@ export const protocols: Protocol[] = [
     tags: ["trading", "real-time"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/maniafun.svg",
+    icon: "https://mania.fun/favicon.ico",
     links: {
       website: "https://mania.fun",
     },
@@ -106,7 +106,7 @@ export const protocols: Protocol[] = [
     tags: ["leverage", "gamified"],
     status: "invite_only",
     isMegaMafia: false,
-    icon: "/icons/hitone.svg",
+    icon: "https://hit.one/favicon.ico",
     links: {
       website: "https://hit.one",
     },
@@ -119,7 +119,7 @@ export const protocols: Protocol[] = [
     tags: ["orderbook", "fx", "rates"],
     status: "invite_only",
     isMegaMafia: false,
-    icon: "/icons/supernova.svg",
+    icon: "https://supernovalabs.xyz/favicon.ico",
     links: {
       website: "https://supernovalabs.xyz",
       twitter: "https://twitter.com/SupernovaLabs_",
@@ -133,7 +133,7 @@ export const protocols: Protocol[] = [
     tags: ["clob", "orderbook"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/canonic.svg",
+    icon: "https://canonic.xyz/favicon.ico",
     links: {
       website: "https://canonic.xyz",
       twitter: "https://twitter.com/_canonic",
@@ -147,7 +147,7 @@ export const protocols: Protocol[] = [
     tags: ["leverage", "no-liquidation"],
     status: "live",
     isMegaMafia: true,
-    icon: "/icons/leveragesir.svg",
+    icon: "https://raw.githubusercontent.com/SIR-trading/sir-landing/main/public/logo_240x240.png",
     links: {
       website: "https://sir.trading",
       twitter: "https://twitter.com/leveragesir",
@@ -163,7 +163,7 @@ export const protocols: Protocol[] = [
     tags: ["lending", "vault", "yield"],
     status: "live",
     isMegaMafia: true,
-    icon: "/icons/avon.svg",
+    icon: "https://avon.xyz/favicon.ico",
     links: {
       website: "https://avon.xyz",
       twitter: "https://twitter.com/avon_xyz",
@@ -177,7 +177,7 @@ export const protocols: Protocol[] = [
     tags: ["stablecoin", "yield", "cusd"],
     status: "live",
     isMegaMafia: true,
-    icon: "/icons/capmoney.svg",
+    icon: "https://raw.githubusercontent.com/megaeth-labs/mega-tokenlist/main/data/CUSD/logo.svg",
     links: {
       website: "https://cap.money",
       twitter: "https://twitter.com/capmoney_",
@@ -193,7 +193,7 @@ export const protocols: Protocol[] = [
     tags: ["gaming", "football", "fantasy"],
     status: "live",
     isMegaMafia: true,
-    icon: "/icons/topstrike.svg",
+    icon: "https://topstrike.io/favicon.ico",
     links: {
       website: "https://topstrike.io",
       twitter: "https://twitter.com/TopStrikeIO",
@@ -207,7 +207,7 @@ export const protocols: Protocol[] = [
     tags: ["gaming", "poker", "tcg"],
     status: "live",
     isMegaMafia: true,
-    icon: "/icons/showdown.svg",
+    icon: "https://showdown.gg/favicon.ico",
     links: {
       website: "https://showdown.gg",
       twitter: "https://twitter.com/Showdown_TCG",
@@ -221,7 +221,7 @@ export const protocols: Protocol[] = [
     tags: ["gaming", "gacha", "perp"],
     status: "coming_soon",
     isMegaMafia: true,
-    icon: "/icons/offshore.svg",
+    icon: "https://offshore.game/favicon.ico",
     links: {
       website: "https://offshore.game",
       twitter: "https://twitter.com/OffshoreOnMega",
@@ -235,7 +235,7 @@ export const protocols: Protocol[] = [
     tags: ["gaming", "ai", "competition"],
     status: "live",
     isMegaMafia: true,
-    icon: "/icons/aicrypts.svg",
+    icon: "https://aicrypts.xyz/favicon.ico",
     links: {
       website: "https://aicrypts.xyz",
       twitter: "https://twitter.com/AiCrypts",
@@ -249,7 +249,7 @@ export const protocols: Protocol[] = [
     tags: ["gaming", "battle", "mecha"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/aveforge.svg",
+    icon: "https://aveforge.xyz/favicon.ico",
     links: {
       website: "https://aveforge.xyz",
     },
@@ -262,7 +262,7 @@ export const protocols: Protocol[] = [
     tags: ["gaming", "3d", "gambling"],
     status: "coming_soon",
     isMegaMafia: false,
-    icon: "/icons/dorado.svg",
+    icon: "https://dorado.xyz/favicon.ico",
     links: {
       website: "https://dorado.xyz",
     },
@@ -275,7 +275,7 @@ export const protocols: Protocol[] = [
     tags: ["gaming", "show", "interactive"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/pumpparty.svg",
+    icon: "https://pumpparty.xyz/favicon.ico",
     links: {
       website: "https://pumpparty.xyz",
     },
@@ -290,7 +290,7 @@ export const protocols: Protocol[] = [
     tags: ["bot", "trading", "sniper"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/prioritytrade.svg",
+    icon: "https://prioritytrade.xyz/favicon.ico",
     links: {
       website: "https://prioritytrade.xyz",
       twitter: "https://twitter.com/PriorityTrade_",
@@ -304,7 +304,7 @@ export const protocols: Protocol[] = [
     tags: ["bot", "trading"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/bananagun.svg",
+    icon: "https://bananagun.io/favicon.ico",
     links: {
       website: "https://bananagun.io",
       twitter: "https://twitter.com/BananaGunBot",
@@ -318,7 +318,7 @@ export const protocols: Protocol[] = [
     tags: ["analytics", "data", "charts"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/birdeye.svg",
+    icon: "https://birdeye.so/favicon.ico",
     links: {
       website: "https://birdeye.so",
       twitter: "https://twitter.com/birdeye_so",
@@ -332,7 +332,7 @@ export const protocols: Protocol[] = [
     tags: ["analytics", "dex", "charts"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/dexscreener.svg",
+    icon: "https://dexscreener.com/favicon.ico",
     links: {
       website: "https://dexscreener.com",
       twitter: "https://twitter.com/dexscreener",
@@ -346,7 +346,7 @@ export const protocols: Protocol[] = [
     tags: ["aggregator", "dex", "swap"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/kyberswap.svg",
+    icon: "https://kyberswap.com/favicon.ico",
     links: {
       website: "https://kyberswap.com",
       twitter: "https://twitter.com/KyberNetwork",
@@ -360,7 +360,7 @@ export const protocols: Protocol[] = [
     tags: ["infrastructure", "esim", "nodes"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/ubitel.svg",
+    icon: "https://ubitel.xyz/favicon.ico",
     links: {
       website: "https://ubitel.xyz",
     },
@@ -373,7 +373,7 @@ export const protocols: Protocol[] = [
     tags: ["infrastructure", "ai", "autonomous"],
     status: "coming_soon",
     isMegaMafia: false,
-    icon: "/icons/cilium.svg",
+    icon: "https://cilium.xyz/favicon.ico",
     links: {
       website: "https://cilium.xyz",
     },
@@ -386,7 +386,7 @@ export const protocols: Protocol[] = [
     tags: ["social", "engagement", "quests"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/reach.svg",
+    icon: "https://reach.xyz/favicon.ico",
     links: {
       website: "https://reach.xyz",
     },
@@ -399,7 +399,7 @@ export const protocols: Protocol[] = [
     tags: ["social", "ai", "culture"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/lemonade.svg",
+    icon: "https://lemonade.xyz/favicon.ico",
     links: {
       website: "https://lemonade.xyz",
     },
@@ -412,7 +412,7 @@ export const protocols: Protocol[] = [
     tags: ["ai", "storytelling", "companions"],
     status: "live",
     isMegaMafia: false,
-    icon: "/icons/nectarai.svg",
+    icon: "https://nectarai.xyz/favicon.ico",
     links: {
       website: "https://nectarai.xyz",
     },
@@ -425,7 +425,7 @@ export const protocols: Protocol[] = [
     tags: ["yield", "emerging-markets", "fx"],
     status: "coming_soon",
     isMegaMafia: false,
-    icon: "/icons/brix.svg",
+    icon: "https://brix.xyz/favicon.ico",
     links: {
       website: "https://brix.xyz",
     },

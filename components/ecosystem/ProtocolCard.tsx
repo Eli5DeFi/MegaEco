@@ -2,6 +2,7 @@
 
 import { Protocol } from "@/data/protocols";
 import { getStatusLabel } from "@/lib/utils";
+import ProtocolIcon from "@/components/shared/ProtocolIcon";
 import styles from "./ProtocolCard.module.css";
 
 interface ProtocolCardProps {
@@ -22,15 +23,6 @@ function getStatusClass(status: string): string {
   }
 }
 
-function getInitials(name: string): string {
-  return name
-    .split(/[\s.]+/)
-    .map((w) => w[0])
-    .join("")
-    .toUpperCase()
-    .slice(0, 2);
-}
-
 export default function ProtocolCard({ protocol, index }: ProtocolCardProps) {
   return (
     <div
@@ -38,9 +30,11 @@ export default function ProtocolCard({ protocol, index }: ProtocolCardProps) {
       style={{ animationDelay: `${index * 50}ms` }}
     >
       <div className={styles.header}>
-        <div className={styles.icon}>
-          <span className={styles.iconText}>{getInitials(protocol.name)}</span>
-        </div>
+        <ProtocolIcon
+          name={protocol.name}
+          iconUrl={protocol.icon}
+          size={48}
+        />
         <div className={styles.meta}>
           <h4 className={styles.name}>{protocol.name}</h4>
           <div className={styles.badges}>

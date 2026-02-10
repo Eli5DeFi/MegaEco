@@ -1,6 +1,7 @@
 "use client";
 
 import { FlowStep as FlowStepType } from "@/data/flows";
+import ProtocolIcon from "@/components/shared/ProtocolIcon";
 import styles from "./FlowStep.module.css";
 
 interface FlowStepProps {
@@ -61,6 +62,11 @@ export default function FlowStep({
           className={styles.protocol}
           style={{ borderColor: categoryColor }}
         >
+          <ProtocolIcon
+            name={step.protocolName}
+            iconUrl={step.protocolIcon}
+            size={24}
+          />
           <span className={styles.protocolName}>{step.protocolName}</span>
           <svg
             width="14"
@@ -98,8 +104,12 @@ export default function FlowStep({
                 rel="noopener noreferrer"
                 className={styles.subStep}
               >
-                <span className={styles.subArrow}>&#x2192;</span>
-                <div>
+                <ProtocolIcon
+                  name={sub.protocolName}
+                  iconUrl={sub.protocolIcon}
+                  size={24}
+                />
+                <div className={styles.subContent}>
                   <span className={styles.subName}>{sub.protocolName}</span>
                   <span className={styles.subDesc}>{sub.description}</span>
                 </div>
